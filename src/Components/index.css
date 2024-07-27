@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(./assets/fonts/Montserrat-Regular.woff2);
+}
+
+:root {
+  --body_background: #101010;
+  --body_color: #fff;
+  --heading_color: #ffe400;
+}
+
+[data-theme="light"] {
+  --body_background: #fff;
+  --body_color: #000;
+  --heading_color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  background-color: var(--body_background);
+  color: var(--body_color);
+  font-family: "Montserrat";
+}
